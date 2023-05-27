@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sprint_01</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;300;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div id="app"></div>
-    <div class="container">
-      <div>
-        <img src="../public/assets/logo.png" class="logo"></img>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sprint_01</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img src="../public/assets/logo.png" class="logo"></img>
+  </header>
+  <main>
+    <section class="text-1">
+      <textarea class="input" type="text" placeholder="Digite seu texto"></textarea>
+      <div class="info">
+        <img src="public/assets/info.png" alt="" srcset="">
+        <p>Apenas letras minusculas e sem acento.</p>
       </div>
-      <div class="text-container">
-        <textarea class="main-input" type="text" placeholder="Digite seu texto"></textarea>
+      <div class="btn">
+        <button onclick="btnEncrypt()" class="crip">Criptografar</button>
+        <button onclick="btnDecrypt()" class="des-crip">Descriptografar</button>
       </div>
-      <div class="menina">
-        menina
-      </div>
-      <footer>
-        <div class="info">
-          <img src="public/assets/info.png" alt="" srcset="">
-          <p class="paragrafo">Apenas letras minusculas e sem acento.</p>
-        </div>
-        <button class="crip">Criptografar</button>   
-        <button class="des-crip">Descriptografar</button>   
-      </footer>
-    </div>
-    <script type="module" src="/main.js"></script>
-  </body>
+    </section>
+    <section class="text-2">
+      <div class="container-msg">
+        <img src="public/assets/garota.png" alt="" srcset="">
+        <textarea class="output" cols="30" rows="10"></textarea>
+        <button onclick="copyText()" class="copy">Copiar</button>
+      </div>    
+    </section>
+  </main>
+</body>
+<script src="main.js"></script>
+
 </html>
